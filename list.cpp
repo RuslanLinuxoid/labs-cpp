@@ -5,7 +5,7 @@
 using namespace std;
 
 
-struct Node {
+struct Node { 
     char name[100];
     char author[100];
     char description[100];
