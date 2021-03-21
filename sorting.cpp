@@ -3,7 +3,7 @@
 using namespace std;
 
 
-#define count 1000000
+#define count 100000
 
 
 void selectionSort(int *num) {
@@ -60,20 +60,20 @@ int main() {
     int search_time; // искомое время
     
     fillArr(arr);
-    
-    start_time =  clock();
-    bubleSort(arr);
-    end_time = clock(); 
-    search_time = (end_time - start_time) / CLOCKS_PER_SEC; 
-    cout <<  search_time << " секунд работал пузырек" << endl;
-    
-    fillArr(arr);
 
     start_time =  clock(); 
     selectionSort(arr);
     end_time = clock(); 
     search_time = (end_time - start_time) / CLOCKS_PER_SEC; 
     cout <<  search_time << " секунд работал выбор" << endl;
+    
+    fillArr(arr);
+    
+    start_time =  clock();
+    bubleSort(arr);
+    end_time = clock(); 
+    search_time = (end_time - start_time) / CLOCKS_PER_SEC; 
+    cout <<  search_time << " секунд работал пузырек" << endl;
     
     fillArr(arr);
 
